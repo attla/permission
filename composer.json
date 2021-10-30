@@ -24,7 +24,7 @@
     "autoload": {
         "psr-4": {
             "Attla\\Permission\\": "src/",
-            "Attla\\Permission\\Database\\Seeds": "database/seeds/"
+            "Attla\\Permission\\Database\\Seeds\\": "database/seeds/"
         }
     },
     "extra": {
