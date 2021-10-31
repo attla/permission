@@ -23,7 +23,7 @@ class PermissionsSeeder extends Seeder
             $this->generatePermissions($resource);
         }
 
-        if ($role = Role::withoutCache()->whereName(AdmRoleSeeder::ROLE_MAIN)->first()) {
+        if ($role = Role::withoutCache()->whereName(AdmRoleSeeder::ADMIN_ROLE)->first()) {
             $role->permissions()->sync(Permission::all()->map(function (Permission $permission) {
                 return $permission->id;
             }));
