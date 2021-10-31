@@ -22,12 +22,9 @@ class ServiceProvider extends BaseServiceProvider
         $this->loadMigrationsFrom($migrationsPath);
 
         // Seeders
-        $seedersPath = __DIR__ . '/../database/seeds';
         $this->publishes([
-            $seedersPath => $this->app->databasePath('seeders'),
+            __DIR__ . '/../stubs/seeds' => $this->app->databasePath('seeders'),
         ], 'attla/permission/seeds');
-
-        $this->loadMigrationsFrom($seedersPath);
 
         //Models
         $this->publishes([
