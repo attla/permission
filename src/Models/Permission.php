@@ -2,9 +2,9 @@
 
 namespace Attla\Permission\Models;
 
-use Attla\Database\Eloquent;
+use Illuminate\Database\Eloquent\Model;
 
-class Permission extends Eloquent
+class Permission extends Model
 {
     protected $fillable = [
         'permission_group_id',

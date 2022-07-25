@@ -3,9 +3,9 @@
 namespace Attla\Permission\Models;
 
 use App\Models\User;
-use Attla\Database\Eloquent;
+use Illuminate\Database\Eloquent\Model;
 
-class Role extends Eloquent
+class Role extends Model
 {
     protected $fillable = [
         'name'
