@@ -1,39 +1,39 @@
 {
-    "name": "attla/permission",
-    "description": "Permission and roles handling",
-    "keywords": [
-        "attla",
-        "permission",
-        "permissions",
-        "roles",
-        "acl",
-        "rbac",
-        "security"
-    ],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Lucas Nicolau",
-            "email": "lucas@octha.com"
-        }
-    ],
-    "require": {
-        "php": ">=7.2",
-        "haydenpierce/class-finder": "^0.4.3"
-    },
-    "autoload": {
-        "psr-4": {
-            "Attla\\Permission\\": "src/",
-            "Attla\\Permission\\Database\\Seeds\\": "database/seeds/"
-        }
-    },
-    "extra": {
-        "attla": {
-            "providers": [
-                "Attla\\Permission\\ServiceProvider"
-            ]
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+	"name": "attla/permission",
+	"description": "Permission and roles handling",
+	"keywords": [
+		"attla",
+		"permission",
+		"permissions",
+		"roles",
+		"acl",
+		"rbac",
+		"security"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Lucas Nicolau",
+			"email": "lucas@octha.com"
+		}
+	],
+	"require": {
+		"php": ">=7.2",
+		"haydenpierce/class-finder": "^0.4.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Attla\\Permission\\": "src/",
+			"Attla\\Permission\\Database\\Seeds\\": "database/seeds/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Attla\\Permission\\ServiceProvider"
+			]
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }
